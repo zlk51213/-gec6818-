@@ -1,0 +1,21 @@
+1，先在官网上下载jpeg的库文件
+
+2，将文件拖动到ubuntu的桌面中，将其解压出来
+	界面解压：右击压缩包，选择extract here
+		或者是用命令解压：tar xzvf jpegsrc.v9c.tar.gz 
+
+	如何理解原理（解压出来的文件中有个README，根据这个文档作为入口去理解即可）
+
+
+
+3，如果你是在arm上面去运行，你需要指定工具链的前缀
+	./configure --host=arm-linux --prefix=/home/scenery/Desktop/my_lib
+			--host：代表开发工具链的前缀
+			--prefix：代表安装文件到哪里去
+
+5，编译：
+	make
+
+6，安装到指定路径
+	make  install
+
