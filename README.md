@@ -4,3 +4,4 @@
 下载好项目后进入src的目录下，
 ./display即可运行项目
 如需重新编译，编译命令为 arm-linux-gcc *.c -o display -I ../include -L ../lib -l jpeg -l font -l m -lpthread -std=c99
+如果有帮助到你的话，不妨给个star吧
